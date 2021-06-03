@@ -1,0 +1,98 @@
+.dashboard {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  overflow-y: scroll;
+}
+
+.dashHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.dashHeader h3 {
+  text-align: center;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  border-width: 1px;
+  margin-bottom: 1.3rem;
+}
+
+.headerContent h3 {
+  margin: 1rem;
+}
+
+.gameList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.playerTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.3rem;
+  margin: 0 0.5rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-width: 1px; */
+}
+
+a.cardWrapper .card {
+  /* background-color: rgb(127, 129, 131); */
+  /* background-color: rgb(61, 115, 136);
+  border-color: rgb(144, 183, 196); */
+  border-color: rgb(144, 183, 196);
+  background-color: rgb(13, 59, 78) !important;
+  margin: 0.6rem;
+  flex: 0 22%;
+  min-width: 13.5rem;
+  padding: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+a.cardWrapper .card:hover {
+  /* background-color: rgb(89, 98, 107); */
+  cursor: auto;
+  color: rgb(241, 241, 241);
+
+  /* border-color: rgb(144, 183, 196);
+  background-color: rgb(13, 59, 78) !important; */
+  background-color: rgb(61, 115, 136) !important;
+  border-color: rgb(144, 183, 196);
+  /* background-color: rgb(61, 115, 136); */
+}
+
+.openStyling {
+  -webkit-text-stroke: 1px #37a778;
+  color: #81dab4;
+}
+
+a.cardWrapper .card:hover .openStyling {
+  -webkit-text-stroke: 1px #11915b;
+  color: #29be80;
+}

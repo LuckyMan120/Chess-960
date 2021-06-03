@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  /* padding: 0 1rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.playerContent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+}
+
+.outsideApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../src/assets/images/background1.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.insideApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0f2027;
+  background: -webkit-linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(45deg, #203a43, #0f2027, #2c5364);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.authCard {
+  align-self: flex-start;
+  /* margin-bottom: 150px; */
+  margin-top: 80px !important;
+}
+
+.leftItem {
+  order: 1; /* default is 0 */
+}
+
+.midItem {
+  order: 2; /* default is 0 */
+}
+
+.rightItem {
+  order: 3; /* default is 0 */
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
+.centered {
+  height: 100h;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

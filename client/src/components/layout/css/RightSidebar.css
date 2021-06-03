@@ -1,0 +1,46 @@
+.rightsidebar {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px; */
+  padding: 1.5rem 1rem 1rem 1rem;
+  /* background: #152331; */
+  background: #121e2b;
+  /* background: linear-gradient(45deg, #000000, #152331); */
+  flex: 1;
+  width: 100%;
+  /* border: 1px solid #585858; */
+}
+
+.playerList {
+  color: gray;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.onlinePlayerList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.names {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0.1rem 1rem;
+}
+
+.playerName {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.onlinePlayerList ul {
+  margin-bottom: 0px;
+}

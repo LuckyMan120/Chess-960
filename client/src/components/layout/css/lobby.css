@@ -1,0 +1,242 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  /* offset for navbar */
+  height: 87vh;
+  /* height: 90vh; */
+  width: 100%;
+  background: #0f2027;
+  background: -webkit-linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(45deg, #203a43, #0f2027, #2c5364);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 7;
+  color: white;
+}
+
+.mainContainer {
+  border: 1px solid #585858;
+  padding: 0rem !important;
+}
+
+.leftsidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1.9rem;
+  background: #000000;
+  flex: 1;
+}
+
+.btn:hover {
+  color: #cce0e9 !important;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-check {
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.icon {
+  /* flex: 1; */
+  /* color: #707070; */
+  justify-content: center;
+  margin: auto;
+}
+
+.rightsidebar {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background: #152331;
+  /* background: linear-gradient(45deg, #000000, #152331); */
+  flex: 1;
+  /* border: 1px solid #585858; */
+}
+
+.dropdown {
+  width: 20rem;
+}
+
+.playerBox {
+  margin: 1px !important;
+  width: 7rem !important;
+  border: 1px solid #585858 !important;
+  background-color: #707070 !important;
+}
+
+.gameWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.gameButtonBar {
+  width: 100%;
+  height: 70%;
+  background-color: firebrick;
+  /* background-color: black; */
+}
+
+.gameContainer {
+  margin: 0.5rem 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.gameWindow {
+  flex: 2;
+  margin: auto;
+}
+
+.findGameTable {
+  margin-top: 2rem;
+}
+
+.table-striped > thead > tr > th {
+  background-color: rgb(2, 20, 29);
+  text-align: center;
+  border-color: rgb(144, 183, 196);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  /* background-color: #294566; */
+  background-color: rgb(11, 69, 94);
+  text-align: center;
+  border-color: rgb(144, 183, 196);
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: rgb(61, 115, 136);
+  text-align: center;
+  border-color: rgb(144, 183, 196);
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: rgb(187, 116, 126);
+}
+
+.playerDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0.5rem 1.6rem;
+}
+
+.clock {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.peice {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.infoBox {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  object-fit: scale-down;
+  /* width: 2rem; */
+  /* height: 100px; */
+}
+
+.emptyStyling {
+  /* -webkit-text-stroke: 1px rgb(95, 95, 95); */
+  text-align: center;
+  font-size: 1.4rem;
+  -webkit-text-stroke: 1px #838383;
+  color: #ffd5d3;
+  /* text-shadow: 1px 1px 0 white, -1px -1px 0 #000, 1px -1px 0 #000
+  -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+.outer table th {
+  text-align: left;
+  top: 0;
+  position: sticky;
+  background-color: black;
+  border: 1px;
+  border-color: gray;
+}
+
+@media (max-width: 1050px) {
+  .rightsidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    flex-direction: column;
+  }
+  .leftsidebar {
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+    flex: 1;
+  }
+
+  .leftsidebar .icon {
+    display: none;
+  }
+
+  .leftsidebar .btn {
+    margin: auto;
+  }
+
+  .leftsidebar .iconTitle {
+    margin: auto;
+  }
+  .btn {
+    font-size: 0.5rem;
+  }
+}
